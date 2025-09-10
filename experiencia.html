@@ -22,7 +22,7 @@
                 <span style="font-size:2em;">&#9776;</span>
             </button>
             <nav>
-                <ul id="menu-list" style="background: #23272b; border-radius: 16px; box-shadow: 0 2px 12px #0006; padding: 8px 24px; display: flex; gap: 18px; align-items: center; margin: 0; border: 1px solid #333;">
+                <ul id="menu-list" style="background: #23272b; border-radius: 16px; box-shadow: 0 2px 12px #0006; padding: 8px 24px; display: flex; gap: 18px; align-items: center; margin: 0; border: 1px solid #444;">
                     <li class="menu-item">
                         <a title="Página inicial" href="index.html" class="menu-link">
                             <img src="images/netbeans-original.svg" height="20" alt="Página Inicial" class="menu-icon" />
@@ -89,48 +89,34 @@
         </script>
     </header>
 
-    <main class="experiencia-main"
+    <main class="formacao-main"
         style="max-width: 900px; margin: 40px auto; background: #23272b; border-radius: 10px; box-shadow: 0 2px 12px #0001; padding: 32px; color: #fff;">
         <div class="title" style="text-align:center;">
             <h1 style="margin-bottom: 0.5em; font-size:2.5em; letter-spacing:1px;">Experiências Profissionais</h1>
             <hr color="#444" style="margin: 0 auto 2em auto; width: 60%;">
         </div>
         <section id="experiencia" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
-            <!--<div class="card"
-                style="background: #23272b; color: #fff; border-radius: 12px; box-shadow: 0 2px 12px #0003; padding: 24px 32px; min-width: 320px; max-width: 420px; flex: 1 1 340px;">
-                <h2 style="display: flex; align-items: center; gap: 10px; font-size: 1.4em;"><img
-                        src="images/linuxmint-original.svg" width="28" alt="TI">Repinho Reflorestadora Madeiras e
-                    Compensados</h2>
-                <p><b>Cargo:</b> Coordenador de TI</p>
-                <p><b>Período:</b> abril de 2012 - Presente (13 anos 5 meses)</p>
-                <p><b>Local:</b> Guarapuava</p>
-                <ul>
-                    <li>Liderança de infraestrutura de TI para empresa do setor madeireiro</li>
-                    <li>Automação em Python que reduziu tempo de lançamentos de produção em 40%</li>
-                    <li>Gerenciamento de licenciamento Windows e sistemas Linux para +50 usuários</li>
-                    <li>Implantação de soluções de segurança de dados conforme LGPD</li>
-                </ul>
-            </div>
-            ... outros cards ...
-            -->
-            <div class="card"
-                style="background: #23272b; color: #fff; border-radius: 12px; box-shadow: 0 2px 12px #0003; padding: 24px 32px; min-width: 320px; max-width: 420px; flex: 1 1 340px; display: flex; flex-direction: column; align-items: flex-start;">
-                <h2 style="display: flex; align-items: center; gap: 10px; font-size: 1.4em;">
-                    <img src="https://github.com/TRogato/landingpage/blob/main/images/docker-original.svg" width="28" alt="Stock Management">
-                    Projeto Stock Management
+            <!-- Outras experiências comentadas -->
+            <!-- NOVO CARD DE EXPERIÊNCIA -->
+            <a href="experiencia/stock/index.html" class="card" style="background: #23272b; color: #fff; border-radius: 12px; box-shadow: 0 2px 12px #0003; padding: 24px 32px; min-width: 320px; max-width: 420px; flex: 1 1 340px; text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; transition: box-shadow 0.2s, transform 0.2s;">
+                <h2 style="display: flex; align-items: center; gap: 10px; font-size: 1.3em; margin-bottom: 8px;">
+                    <img src="images/docker-original.svg" width="32" alt="Stock Management" style="vertical-align: middle;">
+                    Stock Management
                 </h2>
-                <p>Gestão de estoque simples, desenvolvido como estudo de automação para pequenas empresas ou uso pessoal.</p>
-                <a href="experiencia/stock/index.html" target="_blank" class="menu-link"
-                   style="margin-top: 1em; align-self: flex-end; background: #0af; color: #fff; padding: 8px 20px; border-radius: 8px; box-shadow: 0 2px 8px #0002; font-weight: bold; text-decoration: none; transition: background 0.2s;">
-                   Acessar projeto
-                </a>
-            </div>
+                <p><b>Projeto:</b> Sistema de gestão de estoque moderno com Docker</p>
+                <p><b>Local:</b> <code>experiencia/stock/index.html</code></p>
+                <ul style="margin-left: 1em;">
+                    <li>Implantação de containers Docker para ambiente de produção</li>
+                    <li>Automação de deploy e gerenciamento de inventário</li>
+                    <li>Interface intuitiva e responsiva para controle de produtos</li>
+                </ul>
+            </a>
         </section><br><br>
     </main>
-    <footer class="footer" style="margin-top: auto; background: #23272b; color: #7ecfff; border-top: 1px solid #444; display: flex; align-items: center; justify-content: center; height: 80px; width: 100vw;">
+    <footer class="footer" style="margin-top: auto; background: #23272b; color: #7ecfff; border-top: 1px solid #444; display: flex; align-items: center; justify-content: center; height: 80px; width: 100%;">
         <div class="footer-content" style="display: flex; align-items: center; gap: 16px;">
             <img src="images/logo.png" alt="Logo Tiago Rogato" style="height: 40px; border-radius: 8px; box-shadow: 0 2px 8px #0002; animation: pulse 2s infinite alternate;" />
-            <span style="font-size: 1.1em;">Site desenvolvido por <b>Tiago Rogato</b> &copy; <a href="mailto:t.rogato@gmail.com" class="footer-link">Contato</a> | <a href="https://github.com/TRogato" class="footer-link" target="_blank">GitHub</a></span>
+            <span style="font-size: 1.1em;">Site desenvolvido por <b>Tiago Rogato</b> &copy; <a href="mailto:t.rogato@gmail.com" class="footer-link">Contato</a> | <a href="https://github.com/TRogato" target="_blank" class="footer-link">GitHub</a></span>
         </div>
     </footer>
 </body>
