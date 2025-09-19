@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Experiências</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <!--CSS-->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section id="content"></section>
+        <div id="menu">
+            <button id="menu-toggle" aria-label="Abrir menu" style="display:none;">
+                <span style="font-size:2em;">&#9776;</span>
+            </button>
+            <nav>
+                <ul id="menu-list" style="background: #23272b; border-radius: 16px; box-shadow: 0 2px 12px #0006; padding: 8px 24px; display: flex; gap: 18px; align-items: center; margin: 0; border: 1px solid #444;">
+                    <li class="menu-item">
+                        <a title="Página inicial" href="index.html" class="menu-link">
+                            <img src="images/netbeans-original.svg" height="20" alt="Página Inicial" class="menu-icon" />
+                            Início
+                        </a>
+                    </li>
+                    <li class="menu-item"><a title="Formação escolar e profissional" href="formacao.html" class="menu-link">Formação</a></li>
+                    <li class="menu-item"><a title="Experiências profissionais e qualificações" href="experiencia.html" class="menu-link">Experiência</a></li>
+                    <li class="menu-item"><a title="Meios de projetos" href="projetos.html" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a title="Meios de comunicação" href="contato.html" class="menu-link">Contato</a></li>
+                </ul>
+                <style>
+                    #menu-list li:hover {
+                        background: #1a202c;
+                        transform: translateY(-2px) scale(1.05);
+                    }
+                    #menu-list a:hover {
+                        color: #fff;
+                        text-decoration: underline;
+                    }
+                    @media (max-width: 900px) {
+                        #menu-list {
+                            flex-direction: column !important;
+                            gap: 0 !important;
+                            width: 100vw !important;
+                            border-radius: 0 !important;
+                            box-shadow: none !important;
+                            border: none !important;
+                            padding: 0 !important;
+                        }
+                        #menu-list li {
+                            width: 100vw !important;
+                            border-radius: 0 !important;
+                        }
+                        #menu-list a {
+                            padding: 16px 24px !important;
+                            font-size: 1.2em !important;
+                        }
+                    }
+                </style>
+            </nav>
+        </div>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('menu-list');
+                menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+            }
+            function handleResize() {
+                var menu = document.getElementById('menu-list');
+                var btn = document.getElementById('menu-toggle');
+                if(window.innerWidth <= 900) {
+                    btn.style.display = 'block';
+                    menu.style.display = 'none';
+                } else {
+                    btn.style.display = 'none';
+                    menu.style.display = 'flex';
+                }
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('menu-toggle').onclick = toggleMenu;
+                handleResize();
+                window.addEventListener('resize', handleResize);
+            });
+        </script>
+    </header>
+    </header>
+
+    <main class="formacao-main"
+        style="max-width: 900px; margin: 40px auto; background: #23272b; border-radius: 10px; box-shadow: 0 2px 12px #0001; padding: 32px; color: #fff;">
+        <div class="title" style="text-align:center;">
+            <h1 style="margin-bottom: 0.5em; font-size:2.5em; letter-spacing:1px;">Experiências Profissionais</h1>
+            <hr color="#444" style="margin: 0 auto 2em auto; width: 60%;">
+        </div>
+        <section id="experiencia" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
+            <!--<div class="card"
+                style="background: #23272b; color: #fff; border-radius: 12px; box-shadow: 0 2px 12px #0003; padding: 24px 32px; min-width: 320px; max-width: 420px; flex: 1 1 340px;">
+                <h2 style="display: flex; align-items: center; gap: 10px; font-size: 1.4em;"><img
+                        src="images/linuxmint-original.svg" width="28" alt="TI">Repinho Reflorestadora Madeiras e
+                    Compensados</h2>
+                <p><b>Cargo:</b> Coordenador de TI</p>
+                <p><b>Período:</b> abril de 2012 - Presente (13 anos 5 meses)</p>
+                <p><b>Local:</b> Guarapuava</p>
+                <ul>
+                    <li>Liderança de infraestrutura de TI para empresa do setor madeireiro</li>
+                    <li>Automação em Python que reduziu tempo de lançamentos de produção em 40%</li>
+                    <li>Gerenciamento de licenciamento Windows e sistemas Linux para +50 usuários</li>
+                    <li>Implantação de soluções de segurança de dados conforme LGPD</li>
+                </ul>
+            </div>
+            <div class="card"
+                style="background: #23272b; color: #fff; border-radius: 12px; box-shadow: 0 2px 12px #0003; padding: 24px 32px; min-width: 320px; max-width: 420px; flex: 1 1 340px;">
+                <h2 style="display: flex; align-items: center; gap: 10px; font-size: 1.4em;"><img
+                        src="images/rockylinux-original.svg" width="28" alt="Web">VirtuaSystem</h2>
+                <p><b>Cargo:</b> Webmaster</p>
+                <p><b>Período:</b> janeiro de 2019 - Presente (6 anos 8 meses)</p>
+                <p><b>Local:</b> Guarapuava, Paraná</p>
+                <ul>
+                    <li>Desenvolvimento de soluções de e-commerce para PMEs</li>
+                    <li>Implementação de estratégias de marketing digital que aumentaram conversões em 40%</li>
+                    <li>Gerenciamento de infraestrutura web com HTML5, Node.js e integrações</li>
+                </ul>
+            </div>
+            <div class="card"
+                style="background: #23272b; color: #fff; border-radius: 12px; box-shadow: 0 2px 12px #0003; padding: 24px 32px; min-width: 320px; max-width: 420px; flex: 1 1 340px;">
+                <h2 style="display: flex; align-items: center; gap: 10px; font-size: 1.4em;"><img
+                        src="images/travis-original.svg" width="28" alt="Logística">Rogato & Cia. Ltda</h2>
+                <p><b>Cargo:</b> Gestor de processos, Logística e Frotas</p>
+                <p><b>Período:</b> março de 1997 - março de 2014 (17 anos 1 mês)</p>
+                <p><b>Local:</b> Guarapuava, Paraná</p>
+                <ul>
+                    <li>Coordenação de Logística, Manutenção de frota, Treinamento em Veículos pesados (Volvo, Mercedes
+                        Bens, Iveco e Scania)</li>
+                    <li>Otimização de fretes e destinos, reduzindo custos de manutenção e aumentando a vida útil dos
+                        veículos</li>
+                </ul>
+            </div>
+            <div class="card"
+                style="background: #23272b; color: #fff; border-radius: 12px; box-shadow: 0 2px 12px #0003; padding: 24px 32px; min-width: 320px; max-width: 420px; flex: 1 1 340px;">
+                <h2 style="display: flex; align-items: center; gap: 10px; font-size: 1.4em;"><img
+                        src="images/archlinux-original.svg" width="28" alt="Suporte">Reptec Informatica</h2>
+                <p><b>Cargo:</b> Suporte técnico</p>
+                <p><b>Período:</b> janeiro de 2010 - janeiro de 2013 (3 anos 1 mês)</p>
+                <p><b>Local:</b> Guarapuava</p>
+            </div>-->
+        </section><br><br>
+    </main>
+    <footer class="footer" style="margin-top: auto; background: #23272b; color: #7ecfff; border-top: 1px solid #444; display: flex; align-items: center; justify-content: center; height: 80px; width: 100vw; box-shadow: 0 -2px 12px #0003;">
+        <div class="footer-content" style="display: flex; align-items: center; gap: 16px;">
+            <img src="images/logo.png" alt="Logo Tiago Rogato" style="height: 40px; border-radius: 8px; box-shadow: 0 2px 8px #0002; animation: pulse 2s infinite alternate;" />
+            <span style="font-size: 1.1em;">Site desenvolvido por <b>Tiago Rogato</b> &copy; <a href="mailto:t.rogato@gmail.com" class="footer-link">Contato</a> | <a href="https://github.com/TRogato" target="_blank" class="footer-link">GitHub</a></span>
+        </div>
+    </footer>
+</body>
+
+</html>
