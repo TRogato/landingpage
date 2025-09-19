@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+	<title>Contato</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,500" rel="stylesheet">
+
+	<link rel="stylesheet" href="vendor/themify-icons/themify-icons.css">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.footer-bg {
+			color: white;
+		}
+		.footer-bg h3, .footer-bg a {
+			color: white;
+		}
+		.map-container iframe {
+			border-radius: 8px;
+			box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+		}
+
+		#contato {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 32px;
+			justify-content: center;
+			width: 100%;
+		}
+
+		#contato .card {
+			background: rgba(35, 39, 43, 0.8);
+			color: #fff;
+			border-radius: 20px;
+			padding: 40px;
+			flex: 1 1 340px;
+			max-width: 420px;
+			transition: all 0.3s ease;
+			backdrop-filter: blur(10px);
+			border: 1px solid rgba(126, 207, 255, 0.2);
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+			position: relative;
+			overflow: hidden;
+		}
+
+		#contato .card::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 5px;
+			background: linear-gradient(90deg, #f9cc41, #4a9fe8, #f9cc41);
+			background-size: 200% 100%;
+			animation: gradientMove 3s ease infinite;
+		}
+
+		@keyframes gradientMove {
+			0% { background-position: 0% 50%; }
+			50% { background-position: 100% 50%; }
+			100% { background-position: 0% 50%; }
+		}
+
+		#contato .card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+		}
+
+		#contato h2 {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			font-size: 1.6rem;
+			color: #f9cc41;
+			margin-bottom: 25px;
+			font-weight: 600;
+		}
+
+		#contato h2 i {
+			font-size: 1.4em;
+		}
+
+		#contato .contact-info {
+			margin-top: 25px;
+		}
+
+		#contato .contact-item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 18px;
+			padding: 12px 15px;
+			background: rgba(255, 255, 255, 0.05);
+			border-radius: 10px;
+			transition: all 0.2s ease;
+		}
+
+		#contato .contact-item:hover {
+			background: rgba(126, 207, 255, 0.1);
+			transform: translateX(5px);
+		}
+
+		#contato .contact-item i {
+			font-size: 1.4rem;
+			margin-right: 15px;
+			width: 30px;
+			color: #7ecfff;
+		}
+
+		#contato .contact-text {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#contato .contact-type {
+			font-size: 0.85rem;
+			color: #aaa;
+			margin-bottom: 3px;
+		}
+
+		#contato .contact-value {
+			font-size: 1rem;
+			color: #fff;
+		}
+
+		#contato .social-links {
+			margin-top: 30px;
+			display: flex;
+			gap: 18px;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		#contato .social-img {
+			height: 52px;
+			border-radius: 10px;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s ease;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- ================Offcanvus Menu Area =================-->
+	<div class="side_menu">
+		<ul class="list menu_right">
+			<li>
+				<a href="index.html">Início</a>
+			</li>
+			<li>
+				<a href="about.html">Sobre</a>
+			</li>
+			<li>
+				<a href="projects.html">Projetos</a>
+			</li>
+			<li>
+				<a href="service.html">Serviços</a>
+			</li>
+			<!--<li>
+				<a href="#">Páginas</a>
+				<ul class="list">
+					<li>
+						<a href="elements.html">Elementos</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Blog</a>
+				<ul class="list">
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="single-blog.html">Detalhes do Blog</a>
+					</li>
+				</ul>
+			</li>-->
+			<li>
+				<a href="contact.html">Contato</a>
+			</li>
+		</ul>
+	</div>
+	<!--================End Offcanvus Menu Area =================-->
+
+	<!--================Canvus Menu Area =================-->
+	<div class="canvus_menu">
+		<div class="container">
+			<div class="float-right">
+				<div class="toggle_icon" title="Barra de Menu">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================End Canvus Menu Area =================-->
+
+	<header class="hero-banner project-bg">
+		<a class="navbar-brand" href="index.html">
+			<img src="img/logo.png" alt="">
+		</a>
+		<div class="container">
+			<h2 class="section-intro__subtitle">Fale Conosco</h2>
+			<div class="btn-group breadcrumb">
+				<a href="index.html" class="btn">Início</a>
+				<span class="btn btn--rightBorder">Contato</span>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="section-margin">
+		<div class="container">
+			<div class="section-intro">
+				<h4 class="section-intro__title">CONTATO</h4>
+				<h2 class="section-intro__subtitle bottom-border">Vamos Conversar?</h2>
+			</div>
+			<!-- google map start -->
+			<div class="d-none d-sm-block mb-5 pb-4 map-container">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4275.918331274876!2d-51.48139212385908!3d-25.380501930936592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef37b17a9426e7%3A0xfeda0e602826802e!2zUHJhw6dhIERhIEbDqQ!5e1!3m2!1spt-BR!2sbr!4v1758213701175!5m2!1spt-BR!2sbr"
+					width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<!-- google map end -->
+
+
+			<div class="row">
+				<div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+					<div class="media contact-info">
+						<span class="contact-info__icon"><i class="lnr lnr-home"></i></span>
+						<div class="media-body">
+							<h3>Brasil</h3>
+							<p>Guarapuava</p>
+						</div>
+					</div>
+					<div class="media contact-info">
+						<span class="contact-info__icon"><i class="lnr lnr-phone-handset"></i></span>
+						<div class="media-body">
+							<h3><a href="tel:454545654">00 (000) 0000 0000</a></h3>
+							<p>Numero não divulgado</p>
+						</div>
+					</div>
+					<div class="media contact-info">
+						<span class="contact-info__icon"><i class="lnr lnr-envelope"></i></span>
+						<div class="media-body">
+							<h3><a href="mailto:t.rogato@mail.com">t.rogato@mail.com</a></h3>
+							<p>Se você tiver sugestões, ideias ou quiser contratar para algum projetos</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8 col-lg-9">
+					<section id="contato">
+						<div class="card">
+							<h2><i class="fas fa-envelope"></i> Contato Direto</h2>
+							
+							<div class="contact-info">
+								<div class="contact-item">
+									<i class="fab fa-linkedin"></i>
+									<div class="contact-text">
+										<span class="contact-type">LinkedIn</span>
+										<span class="contact-value">/tiago-rogato-da-silveira</span>
+									</div>
+								</div>
+								
+								<div class="contact-item">
+									<i class="fab fa-github"></i>
+									<div class="contact-text">
+										<span class="contact-type">GitHub</span>
+										<span class="contact-value">/TRogato</span>
+									</div>
+								</div>
+								
+								<div class="contact-item">
+									<i class="fas fa-envelope"></i>
+									<div class="contact-text">
+										<span class="contact-type">E-mail</span>
+										<span class="contact-value">t.rogato@gmail.com</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card">
+							<h2><i class="fas fa-share-alt"></i> Redes Sociais</h2>
+							<p style="margin-bottom: 20px; color: #ccc; line-height: 1.5;">Conecte-se comigo através das redes sociais para acompanhar meus projetos e entrar em contato.</p>
+							
+							<div class="social-links">
+								<a href="https://www.linkedin.com/in/tiago-rogato-da-silveira-095563b6/" target="_blank" class="social-link">
+									<img alt="LinkedIn" class="social-img" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+								</a>
+								<a href="https://github.com/TRogato/Trogato" target="_blank" class="social-link">
+									<img alt="GitHub" class="social-img" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+								</a>
+								<a href="mailto:t.rogato@gmail.com" class="social-link">
+									<img alt="Email" class="social-img" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+								</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer footer-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-lg-2 mb-4 mb-lg-0 text-center text-sm-left">
+					<h3 class="footer__title">Principais Produtos</h3>
+					<ul class="footer__linkk">
+						<li><a href="#/">Site Gerenciado</a></li>
+						<li><a href="#/">Gerenciar Reputação</a></li>
+						<li><a href="#/">Ferramentas</a></li>
+						<li><a href="#/">Serviço de Marketing</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-lg-2 mb-4 mb-lg-0 text-center text-sm-left">
+					<h3 class="footer__title">Links Rápidos</h3>
+					<ul class="footer__linkk">
+						<li><a href="#/">Vagas</a></li>
+						<li><a href="#/">Ativos da Marca</a></li>
+						<li><a href="#/">Relações com Investidores</a></li>
+						<li><a href="#/">Termos de Serviço</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-lg-2 mb-4 mb-lg-0 text-center text-sm-left">
+					<h3 class="footer__title">Recursos</h3>
+					<ul class="footer__linkk">
+						<li><a href="#/">Vagas</a></li>
+						<li><a href="#/">Ativos da Marca</a></li>
+						<li><a href="#/">Relações com Investidores</a></li>
+						<li><a href="#/">Termos de Serviço</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-lg-2 mb-4 mb-lg-0 text-center text-sm-left">
+					<h3 class="footer__title">Recursos</h3>
+					<ul class="footer__linkk">
+						<li><a href="#/">Guias</a></li>
+						<li><a href="#/">Pesquisa</a></li>
+						<li><a href="#/">Especialistas</a></li>
+						<li><a href="#/">Agências</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-8 col-lg-4 mb-4 mb-lg-0 text-center text-sm-left">
+					<h3 class="footer__title">Newsletter</h3>
+					<p>Você pode confiar em nós. enviamos apenas ofertas promocionais,</p>
+					<form action="" class="form-subscribe">
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="Seu endereço de e-mail" required>
+							<div class="input-group-append">
+								<button class="btn-append" type="submit"><i class="lnr lnr-arrow-right"></i></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="d-sm-flex justify-content-between footer__bottom top-border">
+				<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Este modelo foi
+					feito com <i class="fa fa-heart" aria-hidden="true"></i> por <b>Tiago Rogato</b> &copy; <a href="mailto:t.rogato@gmail.com" class="footer-link">Contato</a> | <a href="https://github.com/TRogato" target="_blank" class="footer-link">GitHub</a></p>
+				<ul class="social-icons mt-2 mt-sm-0">
+					<li><a href="#/"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#/"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#/"><i class="fab fa-dribbble"></i></a></li>
+					<li><a href="#/"><i class="fab fa-behance"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+
+	<script>
+		var dropToggle = $('.menu_right > li').has('ul').children('a');
+		dropToggle.on('click', function () {
+			dropToggle.not(this).closest('li').find('ul').slideUp(200);
+			$(this).closest('li').children('ul').slideToggle(200);
+			return false;
+		});
+
+		$(".toggle_icon").on('click', function () {
+			$('body').toggleClass("open");
+		});
+
+		// Adicionando feedback visual ao copiar
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                const originalText = this.innerHTML;
+                this.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                this.style.background = 'rgba(76, 175, 80, 0.2)';
+                this.style.color = '#4CAF50';
+                
+                setTimeout(() => {
+                    this.innerHTML = originalText;
+                    this.style.background = '';
+                    this.style.color = '#7ecfff';
+                }, 2000);
+            });
+        });
+	</script>
+</body>
+
+</html>
