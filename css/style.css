@@ -10,6 +10,9 @@
 @define-mixin atExtraLarge {
   @media (min-width: 1200px) {
     @mixin-content; } }
+@define-mixin atExtraLarge {
+  @media (min-width: 2200px) {
+    @mixin-content; } }
 body {
   font-family: 'Roboto', sans-serif;
   background: #262533;
