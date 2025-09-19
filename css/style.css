@@ -573,7 +573,8 @@ button {
 .hero__slide {
   position: relative; }
   .hero__slide img {
-    width: 100%;
+    /* Forçando a largura para 100% para sobrescrever a regra geral do owl-item img */
+    width: 100% !important;
     height: 100vh;
     max-height: 500px;
     object-fit: cover; }
