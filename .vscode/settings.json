@@ -1,5 +1,7 @@
 {
     "CodeGPT.apiKey": "Anthropic",
     "deepseek.apiKey": "sk-bde24908af7d4bbb8ca586efb0fef240",
-    "deepseek.provider": "deepseek"
+    "deepseek.provider": "deepseek",
+    "geminicodeassist.agentYoloMode": true,
+    "geminicodeassist.agentDebugMode": true
 }
