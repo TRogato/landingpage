@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Contato</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <!--CSS-->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section id="content"></section>
+        <div id="menu">
+            <button id="menu-toggle" aria-label="Abrir menu" style="display:none;">
+                <span style="font-size:2em;">&#9776;</span>
+            </button>
+            <nav>
+                <ul id="menu-list" style="background: #23272b; border-radius: 16px; box-shadow: 0 2px 12px #0006; padding: 8px 24px; display: flex; gap: 18px; align-items: center; margin: 0; border: 1px solid #444;">
+                    <li class="menu-item">
+                        <a title="Página inicial" href="index.html" class="menu-link">
+                            <img src="images/netbeans-original.svg" height="20" alt="Página Inicial" class="menu-icon" />
+                            Início
+                        </a>
+                    </li>
+                    <li class="menu-item"><a title="Formação escolar e profissional" href="formacao.html" class="menu-link">Formação</a></li>
+                    <li class="menu-item"><a title="Experiências profissionais e qualificações" href="experiencia.html" class="menu-link">Experiência</a></li>
+                    <li class="menu-item"><a title="Meios de projetos" href="projetos.html" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a title="Meios de comunicação" href="contato.html" class="menu-link">Contato</a></li>
+                </ul>
+                <style>
+                    #menu-list li:hover {
+                        background: #1a202c;
+                        transform: translateY(-2px) scale(1.05);
+                    }
+                    #menu-list a:hover {
+                        color: #fff;
+                        text-decoration: underline;
+                    }
+                    @media (max-width: 900px) {
+                        #menu-list {
+                            flex-direction: column !important;
+                            gap: 0 !important;
+                            width: 100vw !important;
+                            border-radius: 0 !important;
+                            box-shadow: none !important;
+                            border: none !important;
+                            padding: 0 !important;
+                        }
+                        #menu-list li {
+                            width: 100vw !important;
+                            border-radius: 0 !important;
+                        }
+                        #menu-list a {
+                            padding: 16px 24px !important;
+                            font-size: 1.2em !important;
+                        }
+                    }
+                </style>
+            </nav>
+        </div>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('menu-list');
+                menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+            }
+            function handleResize() {
+                var menu = document.getElementById('menu-list');
+                var btn = document.getElementById('menu-toggle');
+                if(window.innerWidth <= 900) {
+                    btn.style.display = 'block';
+                    menu.style.display = 'none';
+                } else {
+                    btn.style.display = 'none';
+                    menu.style.display = 'flex';
+                }
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('menu-toggle').onclick = toggleMenu;
+                handleResize();
+                window.addEventListener('resize', handleResize);
+            });
+        </script>
+    </header>
+    </header>
+    <main style="flex:1; background: linear-gradient(135deg, #23272b 60%, #2d3748 100%);">
+        <div class="title" style="text-align:center; margin-top:32px;">
+            <h1 style="margin-bottom: 0.5em; font-size:2.5em; letter-spacing:1px; color:#7ecfff; text-shadow: 0 2px 8px #0006;">Fale comigo</h1>
+            <hr color="#444" style="margin: 0 auto 2em auto; width: 60%;">
+        </div>
+        <section id="contato" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
+            <div class="card" style="background: #23272b; color: #fff; border-radius: 16px; box-shadow: 0 4px 24px #0006; padding: 32px 40px; min-width: 320px; max-width: 420px; flex: 1 1 340px; transition: transform 0.2s, box-shadow 0.2s;">
+                <h2 style="display: flex; align-items: center; gap: 10px; font-size: 1.5em; color:#7ecfff; margin-bottom:16px;">Contato Direto</h2>
+                <ul style="margin-bottom: 1em; font-size:1.1em;">
+                    <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/tiago-rogato-da-silveira-095563b6/" target="_blank" style="color:#7ecfff;">Meu LinkedIn</a></li>
+                    <li><b>Email:</b> <a href="mailto:t.rogato@gmail.com" style="color:#7ecfff;">t.rogato@gmail.com</a></li>
+                </ul>
+                <div style="margin-top: 1.5em; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://www.linkedin.com/in/tiago-rogato-da-silveira-095563b6/" target="_blank" style="transition: transform 0.2s; display: flex; align-items: center; justify-content: center;">
+                        <img alt="LinkedIn" style="height:48px; border-radius:8px; box-shadow:0 2px 8px #0077B5;" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+                    </a>
+                    <a href="https://github.com/TRogato/Trogato" target="_blank" style="transition: transform 0.2s; display: flex; align-items: center; justify-content: center;">
+                        <img alt="GitHub" style="height:48px; border-radius:8px; box-shadow:0 2px 8px #100000;" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+                    </a>
+                    <a href="mailto:t.rogato@gmail.com" style="transition: transform 0.2s; display: flex; align-items: center; justify-content: center;">
+                        <img alt="Email" style="height:48px; border-radius:8px; box-shadow:0 2px 8px #D14836;" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <style>
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px #7ecfff66;
+        }
+        @media (max-width: 600px) {
+            .card {
+                padding: 16px 4px !important;
+                min-width: 98vw !important;
+                max-width: 100vw !important;
+            }
+            .title h1 {
+                font-size: 1.5em !important;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="js/script.js"></script>
+    <footer class="footer" style="margin-top: auto; background: #23272b; color: #7ecfff; border-top: 1px solid #444; display: flex; align-items: center; justify-content: center; height: 80px; width: 100vw; box-shadow: 0 -2px 12px #0003;">
+        <div class="footer-content" style="display: flex; align-items: center; gap: 16px;">
+            <img src="images/logo.png" alt="Logo Tiago Rogato" style="height: 40px; border-radius: 8px; box-shadow: 0 2px 8px #0002; animation: pulse 2s infinite alternate;" />
+            <span style="font-size: 1.1em;">Site desenvolvido por <b>Tiago Rogato</b> &copy; <a href="mailto:t.rogato@gmail.com" class="footer-link">Contato</a> | <a href="https://github.com/TRogato" target="_blank" class="footer-link">GitHub</a></span>
+        </div>
+    </footer>
+</body>
+
+</html>
