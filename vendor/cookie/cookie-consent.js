@@ -81,14 +81,14 @@
     // ✅ Google Analytics (somente se permitido)
     if (consent.analytics) {
       const s = document.createElement("script");
-      s.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX";
+      s.src = "https://www.googletagmanager.com/gtag/js?id=G-WGCPGRYVN5";
       document.head.appendChild(s);
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "G-XXXXXXX");
+      gtag("config", "G-WGCPGRYVN5");
     }
 
     // ✅ Scripts de marketing (exemplo)
