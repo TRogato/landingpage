@@ -1,0 +1,118 @@
+/* ===== COOKIE CONSENT CSS ===== */
+#cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 340px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#cookie-banner h3 {
+  margin-top: 0;
+  color: #7d7d00;
+}
+
+#cookie-banner p {
+  font-size: 14px;
+  line-height: 1.3em;
+}
+
+#cookie-banner .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#cookie-banner button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn-customizar {
+  border: 1px solid #aaa;
+  background: #fff;
+}
+
+#btn-rejeitar {
+  border: none;
+  background: #b5b300;
+  color: white;
+}
+
+#btn-aceitar {
+  border: none;
+  background: #7d7d00;
+  color: white;
+}
+
+#cookie-banner .links {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#cookie-banner .links a {
+  color: #7d7d00;
+  text-decoration: none;
+}
+
+#cookie-banner .links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MODAL ===== */
+#cookie-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  font-family: Arial, sans-serif;
+}
+
+#cookie-modal .modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 360px;
+  max-width: 90%;
+}
+
+#cookie-modal h3 {
+  margin-top: 0;
+}
+
+#cookie-modal label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#cookie-modal button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn-cancelar {
+  background: #eee;
+  border: none;
+}
+
+#btn-salvar {
+  background: #7d7d00;
+  color: white;
+  border: none;
+}
