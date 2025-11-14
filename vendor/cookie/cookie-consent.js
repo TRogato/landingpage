@@ -34,8 +34,8 @@
         <button id="btn-aceitar">Aceitar</button>
       </div>
       <div class="links">
-        <a href="/privacidade" target="_blank">Aviso de Privacidade</a> |
-        <a href="/termos" target="_blank">Termos de Uso</a>
+        <a href="politica.html" target="_blank">Aviso de Privacidade</a> |
+        <a href="termos.html" target="_blank">Termos de Uso</a>
       </div>
     </div>
   `;
