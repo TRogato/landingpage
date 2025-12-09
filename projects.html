@@ -193,11 +193,24 @@
 
 			<div class="row align-items-end pb-md-5 mb-4">
 				<div class="col-md-5 mb-5 pr-xl-5 order-2 order-md-1">
-					<h4 class="section-intro__title left-border">PROJETO</h4>
-					<h2 class="section-intro__subtitle small">EM BREVE</h2>
-					<p>EM BREVE DESCRIÇÃO</p>
+					<h4 class="section-intro__title left-border">Projeto FTP Uploader</h4>
+					<h2 class="section-intro__subtitle small">FTP Seguro</h2>
+					<p>O **FTP Uploader** é uma aplicação web full-stack desenvolvida para simplificar e otimizar o gerenciamento de arquivos em servidores FTP, funcionando como uma **PWA (Progressive Web App)** totalmente responsiva e compatível com dispositivos móveis e desktop. O projeto foi construído com foco na robustez, segurança e experiência do usuário, garantindo uma solução confiável tanto para uso corporativo quanto pessoal.
 
-						<a class="btn btn--rightBorder mt-3" href="/projects.html">Leia Mais</a>
+No **backend**, foi utilizada a stack **Node.js + Express**, integrada com a biblioteca `basic-ftp` para operações FTP modernas baseadas em promises. A arquitetura implementa um sistema avançado de **filas por cliente** para evitar problemas de concorrência e garantir a serialização das operações por servidor FTP. Entre as funcionalidades principais estão: upload e download de arquivos, navegação remota, criação e exclusão de diretórios, e suporte a **FTPS (FTP sobre TLS/SSL)** com compatibilidade para certificados self-signed.
+
+O **frontend** foi desenvolvido com **HTML5, CSS e JavaScript puro (Vanilla JS)**, adotando uma abordagem **SPA (Single Page Application)** sem frameworks externos. A interface oferece drag & drop de arquivos, navegação intuitiva por diretórios remotos, barras de progresso para uploads, e notificações em tempo real. A aplicação também é **instalável como PWA**, com suporte parcial a funcionamento offline e uma experiência próxima à de aplicativos nativos.
+
+Foram implementadas **medidas robustas de segurança**, incluindo prevenção contra path traversal, sanitização de entradas, validação de credenciais, e limitação de tamanho de arquivos (até 1 GB). O sistema também conta com **lógica de retry automático** e **mecanismo de fallback** para o comando `lftp` em caso de falhas na conexão, garantindo resiliência e continuidade das operações.
+
+Com uma configuração baseada em variáveis de ambiente, o FTP Uploader é facilmente personalizável e pronto para produção, sendo uma solução completa para quem necessita de um gerenciador FTP acessível, seguro e eficiente diretamente pelo navegador.
+
+---
+
+**Palavras-chave:** FTP, PWA, Node.js, Full-Stack, Segurança, Upload, Sincronização, Web App, JavaScript, Express, FTPS.</p>
+
+						<a class="btn btn--rightBorder mt-3" href="#" data-toggle="modal" data-target="#projectModal"
+						data-readme-url="md_projetos/FTP.md">Leia Mais</a>
 				</div>
 
 				<div class="col-md-7 order-1 order-md-2 mb-4 mb-md-0">
