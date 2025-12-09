@@ -34,26 +34,35 @@
 			color: #c5c5c5;
 			border: 1px solid #f9cc41;
 		}
+
 		.modal-header {
 			border-bottom: 1px solid #444;
 			color: #f9cc41;
 		}
+
 		.modal-header .close {
 			color: #fff;
 			text-shadow: none;
 			opacity: .8;
 		}
+
 		.modal-footer {
 			border-top: 1px solid #444;
 		}
-		.modal-body h1, .modal-body h2, .modal-body h3 {
+
+		.modal-body h1,
+		.modal-body h2,
+		.modal-body h3 {
 			color: #f9cc41;
 			margin-top: 1.5rem;
 		}
+
 		.modal-body a {
 			color: #f9cc41;
 		}
-		.modal-body code, .modal-body pre {
+
+		.modal-body code,
+		.modal-body pre {
 			background-color: #3c3b48;
 			color: #ebebeb;
 		}
@@ -155,9 +164,9 @@
 				<div class="col-md-5 mb-5 pr-xl-5 order-2 order-md-1">
 					<h4 class="section-intro__title left-border">PROJETO Agenda - Ramais e Contatos</h4>
 					<h2 class="section-intro__subtitle small">Agenda 2.0</h2>
-					<p>A Agenda de Contatos 2.0 é uma aplicação robusta e eficiente, 
-						desenvolvida para otimizar a gestão de contatos e ramais em ambientes corporativos. 
-						Utilizando tecnologias de ponta, o sistema oferece uma experiência de usuário fluida, 
+					<p>A Agenda de Contatos 2.0 é uma aplicação robusta e eficiente,
+						desenvolvida para otimizar a gestão de contatos e ramais em ambientes corporativos.
+						Utilizando tecnologias de ponta, o sistema oferece uma experiência de usuário fluida,
 						segura e de alta performance.</p>
 
 					<a class="btn btn--rightBorder mt-3" href="#" data-toggle="modal" data-target="#projectModal"
@@ -170,7 +179,7 @@
 				</div>
 			</div>
 
-		
+
 			<div class="row align-items-end pb-md-5 mb-4">
 				<div class="col-md-7 mb-4 mb-md-0">
 					<div class="portfolio__img">
@@ -181,12 +190,15 @@
 				<div class="col-md-5 mb-5 pl-xl-5">
 					<h4 class="section-intro__title left-border">Controle de Embarque</h4>
 					<h2 class="section-intro__subtitle small">Portarias</h2>
-					<p>O Sistema de Controle de Portaria é uma solução tecnológica robusta e integrada, 
-						projetada para otimizar e formalizar o processo de registro de entrada e saída de veículos em portarias. 
-						Combinando uma aplicação de desktop para o ponto de entrada e uma plataforma web para gestão e consulta, 
-						o sistema centraliza todas as informações em um banco de dados MySQL, garantindo segurança, agilidade e rastreabilidade completa das operações.</p>
+					<p>O Sistema de Controle de Portaria é uma solução tecnológica robusta e integrada,
+						projetada para otimizar e formalizar o processo de registro de entrada e saída de veículos em
+						portarias.
+						Combinando uma aplicação de desktop para o ponto de entrada e uma plataforma web para gestão e
+						consulta,
+						o sistema centraliza todas as informações em um banco de dados MySQL, garantindo segurança,
+						agilidade e rastreabilidade completa das operações.</p>
 
-						<a class="btn btn--rightBorder mt-3" href="#" data-toggle="modal" data-target="#projectModal"
+					<a class="btn btn--rightBorder mt-3" href="#" data-toggle="modal" data-target="#projectModal"
 						data-readme-url="md_projetos/portaria_mato.md">Leia Mais</a>
 				</div>
 			</div>
@@ -195,21 +207,31 @@
 				<div class="col-md-5 mb-5 pr-xl-5 order-2 order-md-1">
 					<h4 class="section-intro__title left-border">Projeto FTP Uploader</h4>
 					<h2 class="section-intro__subtitle small">FTP Seguro</h2>
-					<p>O **FTP Uploader** é uma aplicação web full-stack desenvolvida para simplificar e otimizar o gerenciamento de arquivos em servidores FTP, funcionando como uma **PWA (Progressive Web App)** totalmente responsiva e compatível com dispositivos móveis e desktop. O projeto foi construído com foco na robustez, segurança e experiência do usuário, garantindo uma solução confiável tanto para uso corporativo quanto pessoal.
+					<p>O FTP Uploader é uma aplicação web full-stack, desenvolvida como uma PWA (Progressive Web App),
+						que oferece uma interface moderna e responsiva para o
+						gerenciamento completo de arquivos em servidores FTP. Projetada para ser robusta, segura e de
+						fácil utilização, a solução é ideal tanto para ambientes
+						corporativos quanto para uso pessoal.
+						No backend, utiliza Node.js com Express e a biblioteca basic-ftp para operações FTP eficientes e
+						baseadas em promises. O sistema implementa um mecanismo de filas por cliente
+						para evitar conflitos de concorrência e garantir a serialização das operações. Entre suas
+						funcionalidades principais estão: upload e download de arquivos, navegação remota,
+						criação/exclusão de diretórios e suporte a FTPS com compatibilidade para certificados
+						self-signed.
+						O frontend é construído com HTML5, CSS e JavaScript puro (Vanilla JS), seguindo uma arquitetura
+						SPA (Single Page Application). A interface conta com recursos como drag & drop,
+						navegação intuitiva, barras de progresso para uploads e notificações em tempo real. A PWA pode
+						ser instalada e oferece experiência próxima à de um aplicativo nativo, inclusive
+						com suporte a operações offline parciais.
+						Foram adotadas diversas medidas de segurança, como prevenção contra path traversal, sanitização
+						de entradas, validação de credenciais e limite de 1 GB por arquivo. O sistema também
+						inclui retry automático e fallback para lftp em caso de falhas, garantindo resiliência e
+						continuidade nas operações.
+						Configurável via variáveis de ambiente, o FTP Uploader é uma solução completa, pronta para
+						produção, que oferece uma forma acessível, segura e eficiente de gerenciar arquivos
+						FTP diretamente pelo navegador.</p>
 
-No **backend**, foi utilizada a stack **Node.js + Express**, integrada com a biblioteca `basic-ftp` para operações FTP modernas baseadas em promises. A arquitetura implementa um sistema avançado de **filas por cliente** para evitar problemas de concorrência e garantir a serialização das operações por servidor FTP. Entre as funcionalidades principais estão: upload e download de arquivos, navegação remota, criação e exclusão de diretórios, e suporte a **FTPS (FTP sobre TLS/SSL)** com compatibilidade para certificados self-signed.
-
-O **frontend** foi desenvolvido com **HTML5, CSS e JavaScript puro (Vanilla JS)**, adotando uma abordagem **SPA (Single Page Application)** sem frameworks externos. A interface oferece drag & drop de arquivos, navegação intuitiva por diretórios remotos, barras de progresso para uploads, e notificações em tempo real. A aplicação também é **instalável como PWA**, com suporte parcial a funcionamento offline e uma experiência próxima à de aplicativos nativos.
-
-Foram implementadas **medidas robustas de segurança**, incluindo prevenção contra path traversal, sanitização de entradas, validação de credenciais, e limitação de tamanho de arquivos (até 1 GB). O sistema também conta com **lógica de retry automático** e **mecanismo de fallback** para o comando `lftp` em caso de falhas na conexão, garantindo resiliência e continuidade das operações.
-
-Com uma configuração baseada em variáveis de ambiente, o FTP Uploader é facilmente personalizável e pronto para produção, sendo uma solução completa para quem necessita de um gerenciador FTP acessível, seguro e eficiente diretamente pelo navegador.
-
----
-
-**Palavras-chave:** FTP, PWA, Node.js, Full-Stack, Segurança, Upload, Sincronização, Web App, JavaScript, Express, FTPS.</p>
-
-						<a class="btn btn--rightBorder mt-3" href="#" data-toggle="modal" data-target="#projectModal"
+					<a class="btn btn--rightBorder mt-3" href="#" data-toggle="modal" data-target="#projectModal"
 						data-readme-url="md_projetos/FTP.md">Leia Mais</a>
 				</div>
 
@@ -244,7 +266,7 @@ Com uma configuração baseada em variáveis de ambiente, o FTP Uploader é faci
 		</div>
 	</div>
 
-	  <div id="footer-placeholder"></div>
+	<div id="footer-placeholder"></div>
 
 
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
